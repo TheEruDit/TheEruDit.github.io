@@ -52,7 +52,7 @@ header {
 	color: var(--color-second);
 }
 #navbar {
-	padding: 15px 0;
+	padding: 16px 0;
 	background-color: var(--color-second);
 	box-shadow: 0 0 0 var(--color-main);
 }
@@ -175,6 +175,9 @@ header {
 
 
 /*Footer styles*/
+footer .container{
+	margin-bottom: 16px;
+}
 footer div{
 	color: #555;
 }
@@ -324,6 +327,9 @@ footer a:active svg {
 	}
 
 	/*Contacts styles*/
+	footer .container{
+		margin-bottom: 12px;
+	}
 	footer li {
 		font-size: 1.2em;
 	}
@@ -378,6 +384,9 @@ footer a:active svg {
 	}
 
 	/*Contacts styles*/
+	footer .container{
+		margin-bottom: 8px;
+	}
 	footer li {
 		font-size: 1em;
 	}

@@ -8,11 +8,11 @@ window.addEventListener("scroll", function() {
     let navObject = document.getElementById("navbar");
     if (window.scrollY >= headObject.offsetHeight && !navObject.classList.contains("fixed-top")) {
         if (window.innerWidth >= 768) {
-            navObject.style.padding = "10px 0";
+            navObject.style.padding = "8px 0";
             let links = document.getElementsByClassName("_navLink_a");
             for (const link of links) {
                 link.style.fontSize = "1.1em";
-                link.style.padding = "4px 16px";
+                link.style.padding = "6px 16px";
             }
             // // console debug function
             // console.log("navbar resizing successful");
@@ -25,7 +25,7 @@ window.addEventListener("scroll", function() {
     }
     else if (window.scrollY < headObject.offsetHeight && navObject.classList.contains("fixed-top")) {
         if (window.innerWidth >= 768) {
-            navObject.style.padding = "15px 0";
+            navObject.style.padding = "16px 0";
             let links = document.getElementsByClassName("_navLink_a");
             for (const link of links) {
                 link.style.fontSize = "1.25em";
