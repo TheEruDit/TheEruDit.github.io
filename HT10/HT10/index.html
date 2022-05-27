@@ -7,24 +7,25 @@
 </head>
 <body>
     <header id = "head">
-        <nav id = "navbar" class = "container">
-            <div class = "row-2 navImageRow" style = "">
-                <img src = "images/logo.png">
+        <div id = "home"></div>
+        <nav id = "navbar" class = "flex container">
+            <div class = "flex row-2 navRow navImageRow" style = "">
+                <img id = "navbarLogo" src = "images/logo.png">
             </div>
-            <div class = "row-2 navLinksRow" style = "">
-                <div class = "navLinksBlock">
-                    <div class = "navLink"><a class = "" href = "#head">Home</a></div>
-                    <div class = "navLink"><a class = "" href = "#whereToGo">Places</a></div>
-                    <div class = "navLink"><a class = "" href = "#head">Food</a></div>
-                    <div class = "navLink"><a class = "" href = "#head">Accommodation</a></div>
-                    <div class = "navLink"><a class = "" href = "#reviews">Contacts</a></div>
+            <div class = "flex row-2 navRow navLinksRow" style = "">
+                <div class = "flex navLinksBlock">
+                    <div class = "navLink"><a class = "navLink-a" href = "#home">Home</a></div>
+                    <div class = "navLink"><a class = "navLink-a" href = "#whereToGo">Places</a></div>
+                    <div class = "navLink"><a class = "navLink-a" href = "#head">Food</a></div>
+                    <div class = "navLink"><a class = "navLink-a" href = "#head">Accommodation</a></div>
+                    <div class = "navLink"><a class = "navLink-a" href = "#reviews">Contacts</a></div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
         <section id = "hero">
-            <div class="container">
+            <div class="flex container">
                 <h1>Travel Agency "Itchy Feet"</h1>
             </div>
         </section>
@@ -32,14 +33,18 @@
             <div class = "title">
                 <h2>About Us</h2>
             </div>
-            <div class = "container">
-                <div class = "row-2">
-                    <img src = "images/lutsk-castle.jpg">
+            <div class = "flex container">
+                <div class = "flex row-2">
+                    <div class = "block">
+                        <img src = "images/lutsk-castle.jpg">
+                    </div>
                 </div>
-                <div class = "row-2">
-                    <p>Established in 2010, "Itchy Feet" has grown to become a leading travel agent specialising in Lutsk. Along the way we have won a collection of tourism awards, including Travel Agent & Hotel Reservations Service of the Year in the 2019 and 2021 Product Review Awards.</p>
-                    <p>There are a few things we're really proud of. Our trained consultants offer personal service to help you through the process, for a holiday that suits you. Specialising in complete holiday packages, our prices are some of the most competitive in the market with exclusive deals sourced from major industry partners.</p>
-                    <p>Although we offer the convenience of an online service, experience has taught us that sometimes you just want a real person you can talk to. Enjoy the best of both worlds and book with confidence at "Itchy Feet".</p>
+                <div class = "flex row-2">
+                    <div class = "block">
+                        <p>Established in 2010, "Itchy Feet" has grown to become a leading travel agent specialising in Lutsk. Along the way we have won a collection of tourism awards, including Travel Agent & Hotel Reservations Service of the Year in the 2019 and 2021 Product Review Awards.</p>
+                        <p>There are a few things we're really proud of. Our trained consultants offer personal service to help you through the process, for a holiday that suits you. Specialising in complete holiday packages, our prices are some of the most competitive in the market with exclusive deals sourced from major industry partners.</p>
+                        <p>Although we offer the convenience of an online service, experience has taught us that sometimes you just want a real person you can talk to. Enjoy the best of both worlds and book with confidence at "Itchy Feet".</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -47,39 +52,101 @@
             <div class = "title">
                 <h2>Where To Go</h2>
             </div>
-            <div class = "container">
-                <div class = "row-3">
-                    <div class="cardImage">
-                        <img src = "images/lutsk-castle.jpg">
-                    </div>
-                    <div class = "cardTitle">
-                        <h3>Lutsk Castle</h3>
-                    </div>
-                </div>
-                <div class = "row-3">
-                    <div class="cardImage">
-                        <img src = "images/volynyanka-tour.jpg">
-                    </div>
-                    <div class = "cardTitle">
-                        <h3>Tour on Volynyanka</h3>
+            <div class = "flex container">
+                <div class = "flex row-3">
+                    <div class = "card">
+                        <div class="cardImage">
+                            <img src = "images/lutsk-castle.jpg">
+                        </div>
+                        <div class = "cardTitle">
+                            <h3>Lutsk Castle</h3>
+                        </div>
                     </div>
                 </div>
-                <div class = "row-3">
-                    <div class="cardImage">
-                        <img src = "images/dungeons.jpg">
+                <div class = "flex row-3">
+                    <div class = "card">
+                        <div class="cardImage">
+                            <img src = "images/volynyanka-tour.jpg">
+                        </div>
+                        <div class = "cardTitle">
+                            <h3>Tour on Volynyanka</h3>
+                        </div>
                     </div>
-                    <div class = "cardTitle">
-                        <h3>Dungeons of Lutsk</h3>
+                </div>
+                <div class = "flex row-3">
+                    <div class = "card">
+                        <div class="cardImage">
+                            <img src = "images/dungeons.jpg">
+                        </div>
+                        <div class = "cardTitle">
+                            <h3>Dungeons of Lutsk</h3>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id = "reviews">
+            <div class = "title">
+                <h2>Reviews</h2>
+            </div>
+            <div class = "flex container">
+                <div class = "flex row-3">
+                    <div class = "review">
+                        <div class = "reviewHead">
+                            <h4>Miklosh Zdenek</h4>
+                            <div class = "reviewLogo">
+                                <img src = "images/logo-google.webp">
+                            </div>
+                        </div>
+                        <div class = "reviewStars">
+                            <object data = "images/5stars.svg"></object>
+                        </div>
+                        <div class = "reviewBody">
+                            <p>Excellent! Very good service from beginning to end. Even with a COVID-related delay in the middle of it, Lisa stayed in contact with us and got us a reschedule with the utmost of ease. Thank you!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class = "flex row-3">
+                    <div class = "review">
+                        <div class = "reviewHead">
+                            <h4>Daniel Saliba</h4>
+                            <div class = "reviewLogo">
+                                <img src = "images/logo-facebook.webp">
+                            </div>
+                        </div>
+                        <div class = "reviewStars">
+                            <object data = "images/5stars.svg"></object>
+                        </div>
+                        <div class = "reviewBody">
+                            <p>Kristy was extremely helpful ! Any questions we had were answered very quickly via email or phone call. Not my first time using travel online and definitely NOT my last !</p>
+                        </div>
+                    </div>
+                </div>
+                <div class = "flex row-3">
+                    <div class = "review">
+                        <div class = "reviewHead">
+                            <h4>Trena Kennedy</h4>
+                            <div class = "reviewLogo">
+                                <img src = "images/logo-yelp.webp">
+                            </div>
+                        </div>
 
+                        <div class = "reviewStars">
+                            <object data = "images/5stars.svg"></object>
+                        </div>
+                        <div class = "reviewBody">
+                            <p>Itchy Feet was a great company to deal with. Everything was very simple, professional and we were given all the information we required. Thank you for the great service!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-
+        <div class = "flex">
+            <p>Copyright © 2010-2022 * Travel Agency "Itchy Feet"</p>
+        </div>
     </footer>
+    <script src = "script.js" type = "text/javascript"></script>
 </body>
 </html>

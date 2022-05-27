@@ -1,90 +1,129 @@
+/*Variables initialization*/
+:root {
+    --main-color: #fff;
+    --second-color: #00adff;
+    --third-color: #555;
+}
+
+
+/*Common styles*/
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
+section {
+    padding: 4vw 0;
+    scroll-margin-top: 60px;
+}
 a {
     text-decoration: none;
 }
-.container {
+h1 {
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 4vw;
+}
+h2 {
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 2vw;
+}
+h3 {
+
+}
+h4 {
+    font-size: 1.25vw;
+}
+
+
+/*Common class styles*/
+.flex {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+.container {
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     height: auto;
 }
 .row-2 {
-    display: inherit;
     width: 50%;
-    padding: 0 24px;
 }
 .row-3 {
-    display: inherit;
-    flex-direction: column;
     width: 33.33%;
 }
 .title {
     text-align: center;
-    padding: 72px 0 32px;
-}
-
-h1 {
-    color: #fff;
-    font-weight: 600;
-    font-size: 72px;
-    /*text-shadow: 1px 1px 20px #000;*/
-}
-h2 {
-    color: #fff;
-    font-weight: 600;
-    font-size: 36px;
-    /*text-shadow: 1px 1px 20px #000;*/
+    padding-bottom: 2vw;
 }
 
 
-header {
-    background-color: #fff;
+/*Header styles*/
+#home {
+    width: 100%;
+    height: 100px;
+    transition: all linear 0.2s;
 }
+
+
+/*Navbar styles*/
 #navbar {
-
+    position: fixed;
+    top: 0;
+    background-color: var(--main-color);
+}
+.navRow {
+    height: 100px;
+    transition: all linear 0.2s;
 }
 .navImageRow {
-    justify-content: center;
-    align-items: center;
-    width: 30%;
+    width: 20%;
 }
 .navImageRow img{
-    height: 80px;
+    height: 80%;
     margin: 10px 0;
 }
-
 .navLinksRow {
-    justify-content: center;
-    align-items: center;
-    width: 70%;
+    width: 80%;
 }
 .navLinksBlock {
-    display: inherit;
-    justify-content: center;
-    align-items: center;
     margin: 0 0;
 }
 .navLink {
     margin: 0 8px;
 }
-.navLink a{
-    padding: 12px 12px;
-    font-size: 24px;
-    transition: all ease-in-out 0.1s;
-}
-.navLink:hover a{
-    box-shadow: 0 0 10px #555;
+.navLink-a{
+    padding: 8px 12px;
     border-radius: 10px;
+    font-size: 24px;
+    transition: padding ease-in-out 0.1s, box-shadow ease-in-out 0.1s;
+}
+.navLink-a:hover {
+    box-shadow: 0 0 10px var(--third-color);
+}
+.navLink-a:active {
+    color: black;
+    box-shadow: 0 0 3px var(--third-color);
+}
+.navLink-a:focus-visible{
+    box-shadow: 0 0 10px var(--third-color);
+}
+.navLink-a:visited {
+    color: black;
 }
 
+
+/*Hero styles*/
+#hero {
+    padding: 0;
+}
 #hero .container {
     height: 450px;
     background-image: url("images/hero-lutsk.jpg");
@@ -94,33 +133,39 @@ header {
 }
 
 
+/*About Us section styles*/
 #aboutUs {
-    /*height: 500px;*/
-    /*background: rgb(0,173,255);*/
-    /*background: radial-gradient(circle, rgba(0,173,255,1) 0%, rgba(255,255,255,1) 100%);*/
-    /* Created with https://www.css-gradient.com */
-    background: #00ADFF;
-    background: -webkit-radial-gradient(center, #00ADFF, #FFFFFF);
-    background: -moz-radial-gradient(center, #00ADFF, #FFFFFF);
-    background: radial-gradient(ellipse at center, #00ADFF, #FFFFFF);
+    background: var(--second-color);
+    background: -webkit-radial-gradient(center, var(--second-color), var(--main-color));
+    background: -moz-radial-gradient(center, var(--second-color), var(--main-color));
+    background: radial-gradient(ellipse at center, var(--second-color), var(--main-color));
 }
-#aboutUs .row-2{
-    display: block;
+#aboutUs .block {
+    margin: 0 1.25vw;
 }
 #aboutUs img{
     width: 100%;
 }
 #aboutUs p{
     margin-bottom: 16px;
-    font-size: 1.25em;
-    color: #fff;
+    font-size: 1.35vw;
+    color: var(--main-color);
 }
 
-#whereToGo .row-3{
-    padding: 24px;
+
+/*Where To Go section styles*/
+#whereToGo h2{
+    color: #000;
+}
+.card {
+    margin: 1.25vw;
+    padding: 1vw;
+    background: var(--second-color);
+    background: -webkit-radial-gradient(center, var(--second-color), var(--main-color));
+    background: -moz-radial-gradient(center, var(--second-color), var(--main-color));
+    background: radial-gradient(ellipse at center, var(--second-color), var(--main-color));
 }
 .cardImage {
-    /*display: block;*/
     width: 100%;
 }
 .cardImage img {
@@ -128,6 +173,69 @@ header {
     object-fit: cover;
 }
 .cardTitle {
-    /*display: block;*/
+    margin-top: 16px;
     text-align: center;
+    font-size: 1.25vw;
+}
+
+
+/*Reviews section styles*/
+#reviews {
+    background: var(--second-color);
+    background: -webkit-radial-gradient(center, var(--second-color), var(--main-color));
+    background: -moz-radial-gradient(center, var(--second-color), var(--main-color));
+    background: radial-gradient(ellipse at center, var(--second-color), var(--main-color));
+}
+.review {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+    margin: 1.25vw;
+    padding: 1.75vw;
+    border-radius: 16px;
+}
+.reviewHead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.25vw;
+}
+.reviewLogo {
+    margin-left: auto;
+}
+.reviewLogo img {
+    width: 2.5vw;
+}
+.reviewStars object {
+    width: 25%;
+}
+.reviewBody p{
+    margin-top: 0.5vw;
+    font-size: 1vw;
+}
+
+
+/*Footer styles*/
+footer div {
+    width: 100%;
+    height: 75px;
+    background-color: var(--third-color);
+    color: var(--main-color);
+}
+
+
+/*Responsive & adaptive styles*/
+@media only screen and (max-width: 1400px) {
+
+}
+@media only screen and (max-width: 990px) {
+    .row-2 {
+        width: 100%;
+    }
+    .row-3 {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 576px) {
+
 }
