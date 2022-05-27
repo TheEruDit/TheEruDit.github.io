@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <title>CSS Flex</title>
+<style>
+.img-small {
+max-width: 200px;
+height: auto;
+}
+.img-middle {
+width: 100%;
+max-width: 600px;
+height: auto;
+}
+h2, h3{
+color: green;
+text-align: center;
+font-family: Arial;
+}
+p{
+font-family: Arial;
+font-size: 16px;
+}
+.count{
+text-align: center;
+}
+.note {
+background: #ffffcc;
+padding: 20px 10px;
+font-size: 17px;
+font-family: Arial
+}
+
+</style>
+</head>
+<body>
+<h2>1. Flex Container. The flex container properties</h2>
+<h3>Parent Element (Container)</h3>
+<p>The flex container becomes flexible by setting the <em>display</em> property to <em>flex</em>:</p>
+<p>The <em>flex-direction</em> property has default value equal <em>row</em>:</p>
+<div class="flex-container10">
+  <div><img class="img-middle" src="images/01.jpg" alt="Lutsk" /></div>
+  <div><img class="img-middle" src="images/02.jpg" alt="Lutsk" /></div>
+  <div><img class="img-middle" src="images/03.jpg" alt="Lutsk" /></div>   
+</div>
+<h3>The flex-direction Property</h3>
+<p>The <em>flex-direction</em> property defines in which direction the container wants to stack the flex items.</p>
+<p style="text-align: center;">The <em>column</em> value stacks the flex items vertically (from top to bottom):</p>
+<div class="flex-container11">
+  <div>One<br><img class="img-middle" src="images/04.jpg" alt="Lutsk" /></div>
+  <div>Two<br><img class="img-middle" src="images/05.jpg" alt="Lutsk" /></div>
+  <div>Three<br><img class="img-middle" src="images/06.jpg" alt="Lutsk" /></div>
+</div>  
+<p style="text-align: center;">The <em>column-reverse</em> value stacks the flex items vertically (but from bottom to top):</p>
+<div class="flex-container12">
+  <div>One<br><img class="img-middle" src="images/04.jpg" alt="Lutsk" /></div>
+  <div>Two<br><img class="img-middle" src="images/05.jpg" alt="Lutsk" /></div>
+  <div>Three<br><img class="img-middle" src="images/06.jpg" alt="Lutsk" /></div>
+</div>  
+<p style="text-align: center;">The <em>row</em> value stacks the flex items horizontally (from left to right):</p>
+<div class="flex-container13">
+  <div>One<br><img class="img-middle" src="images/07.jpg" alt="Lutsk" /></div>
+  <div>Two<br><img class="img-middle" src="images/08.jpg" alt="Lutsk" /></div>
+  <div>Three<br><img class="img-middle" src="images/09.jpg" alt="Lutsk" /></div>
+</div>  
+<p style="text-align: center;">The <em>row-reverse</em> value stacks the flex items horizontally (but from right to left):</p>
+<div class="flex-container14">
+  <div>One<br><img class="img-middle" src="images/07.jpg" alt="Lutsk" /></div>
+  <div>Two<br><img class="img-middle" src="images/08.jpg" alt="Lutsk" /></div>
+  <div>Three<br><img class="img-middle" src="images/09.jpg" alt="Lutsk" /></div>
+</div> 
+<h3>The flex-wrap Property</h3>
+<p>The <em>flex-wrap</em> property specifies whether the flex items should wrap or not.</p>
+<p style="text-align: center;">The <em>wrap</em> value specifies that the flex items will wrap if necessary:</p>
+<div class="flex-container15">
+  <div>One<br><img class="img-small" src="images/01.jpg" alt="Lutsk" /></div>
+  <div>Two<br><img class="img-small" src="images/02.jpg" alt="Lutsk" /></div>
+  <div>Three<br><img class="img-small" src="images/03.jpg" alt="Lutsk" /></div>
+  <div>Four<br><img class="img-small" src="images/04.jpg" alt="Lutsk" /></div>
+  <div>Five<br><img class="img-small" src="images/05.jpg" alt="Lutsk" /></div>
+  <div>Six<br><img class="img-small" src="images/06.jpg" alt="Lutsk" /></div>
+  <div>Seven<br><img class="img-small" src="images/07.jpg" alt="Lutsk" /></div>
+  <div>Eight<br><img class="img-small" src="images/08.jpg" alt="Lutsk" /></div>
+  <div>Nine<br><img class="img-small" src="images/09.jpg" alt="Lutsk" /></div>
+</div>
+<p style="text-align: center;">The <em>nowrap</em> value specifies that the flex items will not wrap (this is default):</p>
+<div class="flex-container16">
+  <div>One<br><img class="img-small" src="images/01.jpg" alt="Lutsk" /></div>
+  <div>Two<br><img class="img-small" src="images/02.jpg" alt="Lutsk" /></div>
+  <div>Three<br><img class="img-small" src="images/03.jpg" alt="Lutsk" /></div>
+  <div>Four<br><img class="img-small" src="images/04.jpg" alt="Lutsk" /></div>
+  <div>Five<br><img class="img-small" src="images/05.jpg" alt="Lutsk" /></div>
+  <div>Six<br><img class="img-small" src="images/06.jpg" alt="Lutsk" /></div>
+</div>
+<p style="text-align: center;">The <em>wrap-reverse</em> value specifies that the flexible items will wrap if necessary, in reverse order:</p>
+<div class="flex-container17">
+  <div>One<br><img class="img-small" src="images/01.jpg" alt="Lutsk" /></div>
+  <div>Two<br><img class="img-small" src="images/02.jpg" alt="Lutsk" /></div>
+  <div>Three<br><img class="img-small" src="images/03.jpg" alt="Lutsk" /></div>
+  <div>Four<br><img class="img-small" src="images/04.jpg" alt="Lutsk" /></div>
+  <div>Five<br><img class="img-small" src="images/05.jpg" alt="Lutsk" /></div>
+  <div>Six<br><img class="img-small" src="images/06.jpg" alt="Lutsk" /></div>
+  <div>Seven<br><img class="img-small" src="images/07.jpg" alt="Lutsk" /></div>
+  <div>Eight<br><img class="img-small" src="images/08.jpg" alt="Lutsk" /></div>
+  <div>Nine<br><img class="img-small" src="images/09.jpg" alt="Lutsk" /></div>
+</div>
+<h3>The flex-flow Property</h3>
+<p style="text-align: center;">The <em>flex-flow</em> property is a shorthand property for setting both the <em>flex-direction</em> and <em>flex-wrap</em> properties.</p>
+<div class="flex-container18">
+  <div>One<br><img class="img-small" src="images/01.jpg" alt="Lutsk" /></div>
+  <div>Two<br><img class="img-small" src="images/02.jpg" alt="Lutsk" /></div>
+  <div>Three<br><img class="img-small" src="images/03.jpg" alt="Lutsk" /></div>
+  <div>Four<br><img class="img-small" src="images/04.jpg" alt="Lutsk" /></div>
+  <div>Five<br><img class="img-small" src="images/05.jpg" alt="Lutsk" /></div>
+  <div>Six<br><img class="img-small" src="images/06.jpg" alt="Lutsk" /></div>
+  <div>Seven<br><img class="img-small" src="images/07.jpg" alt="Lutsk" /></div>
+  <div>Eight<br><img class="img-small" src="images/08.jpg" alt="Lutsk" /></div>
+  <div>Nine<br><img class="img-small" src="images/09.jpg" alt="Lutsk" /></div>
+</div> 
+<h2>2. The justify-content Property - is used to align the flex items horizontally:</h2>
+<h3>Example #1 - space-evenly</h3>
+<div class="flex-container21">
+  <div><img class="img-small" src="images/01.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/02.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/03.jpg" alt="Lutsk" /></div> 
+  <div><img class="img-small" src="images/04.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/05.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/06.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/07.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/08.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/09.jpg" alt="Lutsk" /></div> 
+</div>
+<h3>Example #2 - space-around</h3>
+<div class="flex-container22"> 
+  <div><img class="img-small" src="images/01.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/02.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/03.jpg" alt="Lutsk" /></div> 
+  <div><img class="img-small" src="images/04.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/05.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/06.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/07.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/08.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/09.jpg" alt="Lutsk" /></div>   
+</div>
+<h3>Example #3 - space-between</h3>
+<div class="flex-container23"> 
+  <div><img class="img-small" src="images/01.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/02.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/03.jpg" alt="Lutsk" /></div> 
+  <div><img class="img-small" src="images/04.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/05.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/06.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/07.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/08.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/09.jpg" alt="Lutsk" /></div>  
+</div>
+
+<h3>Example #4 - center</h3>
+<div class="flex-container24"> 
+  <div><img class="img-small" src="images/01.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/02.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/03.jpg" alt="Lutsk" /></div> 
+  <div><img class="img-small" src="images/04.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/05.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/06.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/07.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/08.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/09.jpg" alt="Lutsk" /></div>  
+</div>
+<h3>Example #5 - flex-start</h3>
+<div class="flex-container25"> 
+  <div><img class="img-small" src="images/04.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/05.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/06.jpg" alt="Lutsk" /></div>  
+</div>
+<h3>Example #6 - flex-end</h3>
+<div class="flex-container26"> 
+  <div><img class="img-small" src="images/07.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/08.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/09.jpg" alt="Lutsk" /></div>  
+</div>
+<h2>3. The align-items Property - is used to align the flex items vertically:</h2>
+<h3>Example #1 - center</h3>
+<div class="flex-container31">
+  <div><img class="img-small" src="images/01.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/02.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/03.jpg" alt="Lutsk" /></div> 
+  <div><img class="img-small" src="images/04.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/05.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/06.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/07.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/08.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/09.jpg" alt="Lutsk" /></div>   
+</div>
+<h3>Example #2 - flex-start</h3>
+<div class="flex-container32"> 
+  <div><img class="img-small" src="images/04.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/05.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/06.jpg" alt="Lutsk" /></div>   
+</div>
+<h3>Example #3 - flex-end</h3>
+<div class="flex-container33"> 
+  <div><img class="img-small" src="images/07.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/08.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/09.jpg" alt="Lutsk" /></div>  
+</div>
+
+<h3>Example #4 - stretch</h3>
+<div class="flex-container34"> 
+  <div><img class="img-small" src="images/01.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/02.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/03.jpg" alt="Lutsk" /></div>  
+</div>
+<h3>Example #5 - baseline</h3>
+<div class="flex-container35"> 
+  <div><h1>1</h1></div>
+  <div><h6>2</h6></div>
+  <div><h3>3</h3></div>  
+  <div><small>4</small></div>  
+</div>
+<h3>Perfect Centering</h3>
+<p>You should solve a very common style problem: perfect centering</p>
+<div class="flex-container36">
+  <div><img class="img-small" src="images/01.jpg" alt="Lutsk" /></div>
+</div>
+<h2>4. The align-content Property - is used to align the flex lines</h2>
+<h3>Example #1 - space-between</h3>
+<div class="flex-container41">
+  <div><img class="img-small" src="images/01.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/02.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/03.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/04.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/05.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/06.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/07.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/08.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/09.jpg" alt="Lutsk" /></div>    
+</div>
+<h3>Example #2 - space-around</h3>
+<div class="flex-container42"> 
+  <div><img class="img-small" src="images/01.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/02.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/03.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/04.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/05.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/06.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/07.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/08.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/09.jpg" alt="Lutsk" /></div>   
+</div>
+<h3>Example #3 - stretch</h3>
+<div class="flex-container43"> 
+  <div><img class="img-small" src="images/01.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/02.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/03.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/04.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/05.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/06.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/07.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/08.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/09.jpg" alt="Lutsk" /></div> 
+</div>
+
+<h3>Example #4 - center</h3>
+<div class="flex-container44"> 
+  <div><img class="img-small" src="images/01.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/02.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/03.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/04.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/05.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/06.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/07.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/08.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/09.jpg" alt="Lutsk" /></div>  
+</div>
+<h3>Example #5 - flex-start</h3>
+<div class="flex-container45"> 
+  <div><img class="img-small" src="images/01.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/02.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/03.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/04.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/05.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/06.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/07.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/08.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/09.jpg" alt="Lutsk" /></div>  
+</div>
+<h3>Example #6 - flex-end</h3>
+<div class="flex-container46"> 
+  <div><img class="img-small" src="images/01.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/02.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/03.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/04.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/05.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/06.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/07.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/08.jpg" alt="Lutsk" /></div>
+  <div><img class="img-small" src="images/09.jpg" alt="Lutsk" /></div>  
+</div>
+</body>
+</html>

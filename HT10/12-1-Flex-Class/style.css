@@ -1,0 +1,306 @@
+/* Step 1 - Defines column direction - flex-direction - default value equal row */
+.flex-container10, .flex-container11, .flex-container12, .flex-container13, .flex-container14,.flex-container15,.flex-container16,.flex-container17,.flex-container18 {
+  display: flex;
+  background-color: #ccc;
+  padding: 10px;
+}
+.flex-container10  > div ,.flex-container11  > div ,.flex-container12  > div ,.flex-container13  > div ,.flex-container14  > div ,.flex-container15  > div ,.flex-container16  > div,.flex-container17 > div,.flex-container18 > div {
+  background-color: #f5f5f5;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+/* Step 2 - Defines column direction - flex-direction: column
+default value equal row
+ */
+.flex-container11 {
+	
+}
+.flex-container11 div {
+/* Step 3 - Add columns width. default value equal 100%;
+width: 400px;
+*/
+	
+}
+/* Step 4 - column-reverse  - vertically (from bottom to top) - flex-direction: column-reverse;*/
+.flex-container12 {
+ 
+}
+.flex-container12 > div {
+  width: 400px;
+}
+/* Step 5 - Defines column direction - flex-direction: row
+default value equal row
+ */
+.flex-container13 {
+  
+}
+/* Step 6 - row-reverse -  horizontally (from left to right) - flex-direction: row-reverse;*/
+.flex-container14 {
+  
+}
+/* Step 7 - the flex items will wrap if necessary - flex-wrap: wrap; */
+.flex-container15 {
+  
+}
+/* Step 8 - the flex items will not wrap (this is default) - flex-wrap: nowrap; */
+.flex-container16 {
+  
+}
+/* Step 9 - the flexible items will wrap if necessary, in reverse order:
+flex-wrap: wrap-reverse;
+*/
+.flex-container17 {
+  
+}
+/* Step 10 - flex-flow - shorthand property for setting both the flex-direction and flex-wrap -
+flex-flow: row wrap;
+ */
+.flex-container18 {
+ 
+}
+.flex-container21, .flex-container22, .flex-container23, .flex-container24, .flex-container25, .flex-container26  {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ccc;
+  padding: 10px;
+  margin: 10px;  
+}
+.flex-container21 > div, .flex-container22 > div, .flex-container23 > div,
+.flex-container24 > div, .flex-container25 > div, .flex-container26 > div {
+  background-color: #f5f5f5;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  margin: 10px;
+}
+/*Step 11 - The justify-content Property - is used to align the flex items horizontally */
+.flex-container21 {
+  justify-content: space-evenly;
+}
+.flex-container21 > div {
+  /*width: 400px;*/
+}
+.flex-container22 {
+  justify-content: space-around;
+}
+.flex-container23 {
+  justify-content: space-between;
+}
+.flex-container24 {
+  justify-content: center;
+}
+.flex-container25 {
+  justify-content: flex-start;
+}
+.flex-container26 {
+  justify-content: flex-end;
+}
+.flex-container31, .flex-container32, .flex-container33, .flex-container34, .flex-container35, .flex-container36  {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ccc;
+  padding: 10px;
+  margin: 10px;  
+  height: 300px;
+}
+.flex-container31 > div, .flex-container32 > div, .flex-container33 > div,
+.flex-container34 > div, .flex-container35 > div, .flex-container36 > div {
+  background-color: #f5f5f5;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  margin: 10px;
+}
+/* Step 12 - The align-items Property - is used to align the flex items vertically if you have only 1 row */
+.flex-container31 {
+  height: 600px;
+  align-items: center;
+/* If you have more than 1 row you should used - align-content */
+  /*align-content: center;*/
+}
+.flex-container32 {
+  align-items: flex-start;
+}
+.flex-container33 {
+  align-items: flex-end;
+}
+.flex-container34 {
+  align-items: stretch;
+}
+.flex-container35 {
+  height: 250px;
+  align-items: baseline;
+}
+.flex-container35 > div {
+  width: 200px;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container36{
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+.flex-container41, .flex-container42, .flex-container43, .flex-container44, .flex-container45, .flex-container46  {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ccc;
+  padding: 10px;
+  margin: 10px;  
+  height: 600px;
+}
+.flex-container41 > div, .flex-container42 > div, .flex-container43 > div,
+.flex-container44 > div, .flex-container45 > div, .flex-container46 > div {
+  background-color: #f5f5f5;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  margin: 10px;
+}
+/* Step13 - The align-content Property - is used to align the flex lines */
+.flex-container41 {
+  align-content: space-between;
+}
+.flex-container42 {
+  align-content: space-around;
+}
+.flex-container43 {
+  align-content: stretch;
+}
+.flex-container44 {
+  align-content: center;
+}
+.flex-container45 {
+  align-content: flex-start;
+}
+.flex-container46 {
+  align-content: flex-end;
+}
+
+/* Step 14 - Flex Item Properties */
+.flex-container51, .flex-container52, .flex-container53, .flex-container54, .flex-container55,.flex-container56 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ccc;
+  padding: 10px;
+}
+.flex-container51  > div ,.flex-container52  > div ,.flex-container53  > div ,.flex-container54  > div ,.flex-container55  > div ,.flex-container56  > div  {
+  background-color: #f5f5f5;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+/* Step 15 - The order property can change the order of the flex items */
+.item-order1 {
+order: 4;
+}
+.item-order2 {
+order: 3;
+}
+.item-order3 {
+order: 1;
+}
+.item-order4 {
+order: 5;
+}
+.item-order5 {
+order: 2;
+}
+/* Step 16 - The flex-grow - specifies how much a flex item will grow relative to the rest of the flex items */
+.item-grow1 {
+flex-grow: 1;
+}
+.item-grow2 {
+flex-grow: 3;
+}
+.item-grow3 {
+flex-grow: 2;
+}
+.flex-container53 {
+flex-wrap: nowrap;
+}
+
+.flex-container53  > div {
+  width: 100px;
+  margin: 5px;
+  text-align: center;
+  }
+/* Step 17 - The flex-shrink(стиснення)- specifies how much a flex item will shrink relative to the rest of the flex items. */
+  .item-shrink{
+	flex-shrink: 0;
+}
+/* Step 18 - The flex-basis - specifies the initial length of a flex item */
+.item-basis{  
+  flex-basis: 400px;
+}
+/* Step 19 - The flex - shorthand property for the flex-grow, flex-shrink flex-basis */
+  .item-flex1{
+    flex: 1 0 300px;
+  }
+   .item-flex2{
+    flex: 2 0 300px;
+  }
+  
+  .flex-container56 {
+height: 400px;
+justify-content: center;
+}
+/* Step 20 - Flex Item Properties: align-self */
+   .item-center{
+   	align-self: center;
+  }
+   .item-start{
+	align-self: flex-start  
+  }
+   .item-end{
+   	align-self: flex-end;  
+  }
+   .item-stratch{
+	align-self: stratch;
+  }
+ /* Step 21 - Nested Flex Containers with Flexbox */
+ 
+  .flex-main-container{ /* Main Flex Container */
+  display: flex;
+  }
+  .flex-main-container div {
+  font-size: 5vw;
+  padding: .5em;
+  color: white;
+  flex: 1;
+}
+.flex-subcontainer-red {		/* Nested Flex Container */
+  display: flex;
+  flex-direction: column;
+  background: orangered;
+    justify-content: center;
+    align-items: center;
+}
+.flex-subcontainer-red-green-item {
+  background: yellowgreen;
+    justify-content: center;
+    align-items: center;
+
+}
+.flex-subcontainer-red-blue-item {
+background: steelblue;
+justify-content: center;
+}
+.green-item {
+  background: yellowgreen;
+  text-align: center;
+}
+.blue-item {
+  background: steelblue;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+.flex-container10, .flex-container11, .flex-container12, .flex-container13, .flex-container14,.flex-container15,.flex-container16,.flex-container17,.flex-container18, .flex-container21, .flex-container22, .flex-container23, .flex-container24, .flex-container25, .flex-container26, .flex-container31, .flex-container32, .flex-container33, .flex-container34, .flex-container35, .flex-container36, .flex-container41, .flex-container42, .flex-container43, .flex-container44, .flex-container45, .flex-container46, .flex-container51, .flex-container52, .flex-container53, .flex-container54, .flex-container55,.flex-container56{
+  display: block;
+}
+div {
+margin-top: 10px;
+}
+}
