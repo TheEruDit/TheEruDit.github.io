@@ -24,20 +24,23 @@ a {
     text-decoration: none;
 }
 h1 {
-    color: var(--main-color);
-    font-weight: 600;
     font-size: 4vw;
+    font-weight: 600;
+    color: var(--main-color);
 }
 h2 {
-    color: var(--main-color);
-    font-weight: 600;
     font-size: 2vw;
+    font-weight: 600;
+    color: var(--main-color);
 }
 h3 {
     font-size: 1.35vw;
 }
 h4 {
     font-size: 1.25vw;
+}
+p {
+    text-align: justify;
 }
 
 
@@ -60,8 +63,14 @@ h4 {
     width: 33.33%;
 }
 .title {
-    text-align: center;
     padding-bottom: 2vw;
+    text-align: center;
+}
+.gradient {
+    background: var(--second-color);
+    background: -webkit-radial-gradient(center, var(--second-color), var(--main-color));
+    background: -moz-radial-gradient(center, var(--second-color), var(--main-color));
+    background: radial-gradient(ellipse at center, var(--second-color), var(--main-color));
 }
 
 
@@ -87,8 +96,8 @@ h4 {
     width: 20%;
 }
 .navImageRow img{
-    height: 80%;
     margin: 10px 0;
+    height: 80%;
 }
 .navLinksRow {
     width: 80%;
@@ -101,9 +110,9 @@ h4 {
 }
 .navLink-a{
     padding: 12px;
-    border-radius: 10px;
-    color: black;
     font-size: 24px;
+    color: black;
+    border-radius: 12px;
     transition: padding ease-in-out 0.1s, box-shadow ease-in-out 0.1s;
 }
 .navLink-a:hover {
@@ -135,12 +144,6 @@ h4 {
 
 
 /*About Us section styles*/
-#aboutUs {
-    background: var(--second-color);
-    background: -webkit-radial-gradient(center, var(--second-color), var(--main-color));
-    background: -moz-radial-gradient(center, var(--second-color), var(--main-color));
-    background: radial-gradient(ellipse at center, var(--second-color), var(--main-color));
-}
 #aboutUs .block {
     margin: 0 1.25vw;
 }
@@ -150,6 +153,7 @@ h4 {
 #aboutUs p{
     margin-bottom: 16px;
     font-size: 1.35vw;
+    line-height: 1.25;
     color: var(--main-color);
 }
 
@@ -159,19 +163,15 @@ h4 {
     color: #000;
 }
 .card {
-    margin: 1.25vw;
+    margin: 0 1.25vw;
     padding: 1vw;
-    background: var(--second-color);
-    background: -webkit-radial-gradient(center, var(--second-color), var(--main-color));
-    background: -moz-radial-gradient(center, var(--second-color), var(--main-color));
-    background: radial-gradient(ellipse at center, var(--second-color), var(--main-color));
 }
 .cardImage {
     width: 100%;
 }
 .cardImage img {
-    width: 100%;
     object-fit: cover;
+    width: 100%;
 }
 .cardTitle {
     margin-top: 16px;
@@ -180,18 +180,12 @@ h4 {
 
 
 /*Reviews section styles*/
-#reviews {
-    background: var(--second-color);
-    background: -webkit-radial-gradient(center, var(--second-color), var(--main-color));
-    background: -moz-radial-gradient(center, var(--second-color), var(--main-color));
-    background: radial-gradient(ellipse at center, var(--second-color), var(--main-color));
-}
 .review {
     display: flex;
     flex-direction: column;
-    background-color: var(--main-color);
-    margin: 1.25vw;
+    margin: 0 1.25vw;
     padding: 1.75vw;
+    background-color: var(--main-color);
     border-radius: 24px;
 }
 .reviewHead {
@@ -218,10 +212,9 @@ h4 {
 /*Footer styles*/
 footer div {
     width: 100%;
-    /*height: 65px;*/
     height: 4vw;
-    background-color: var(--third-color);
     color: var(--main-color);
+    background-color: var(--third-color);
 }
 footer p {
     font-size: 0.8vw;
