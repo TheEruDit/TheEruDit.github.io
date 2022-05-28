@@ -34,6 +34,7 @@ window.addEventListener("scroll", function() {
     let navLogo = document.getElementById("navbarLogo");
     let home = document.getElementById("home");
     let navRows = document.getElementsByClassName("navRow");
+    let navImageRows = document.getElementsByClassName("navImageRow");
     let navLinks = document.getElementsByClassName("navLink-a");
     if (window.scrollY > 0) {
         if (window.innerWidth >= 992) {
@@ -44,14 +45,14 @@ window.addEventListener("scroll", function() {
             for (const navLink of navLinks) {
                 navLink.style.padding = "8px 12px";
             }
-            // navLogo.style.margin = "5px 0";
-            // let links = document.getElementsByClassName("_navLink_a");
-            // for (const link of links) {
-            //     link.style.fontSize = "1.1em";
-            //     link.style.padding = "6px 16px";
-            // }
             // // console debug function
             // console.log("navbar resizing successful");
+        }
+        else {
+            home.style.height = "75px";
+            for (const navImageRow of navImageRows) {
+                navImageRow.style.height = "0";
+            }
         }
         // // console debug function
         // console.log("navbar fixed to top");
@@ -65,15 +66,14 @@ window.addEventListener("scroll", function() {
             for (const navLink of navLinks) {
                 navLink.style.padding = "12px";
             }
-            // navLogo.style.height = "80px";
-            // navLogo.style.margin = "10px 0";
-            // let links = document.getElementsByClassName("_navLink_a");
-            // for (const link of links) {
-            //     link.style.fontSize = "1.1em";
-            //     link.style.padding = "6px 16px";
-            // }
             // // console debug function
             // console.log("navbar resizing successful");
+        }
+        else {
+            home.style.height = "150px";
+            for (const navImageRow of navImageRows) {
+                navImageRow.style.height = "75px";
+            }
         }
         // // console debug function
         // console.log("navbar fixed to top");
