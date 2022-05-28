@@ -211,7 +211,7 @@ h4 {
 }
 .reviewBody p{
     margin-top: 0.5vw;
-    font-size: 1vw;
+    font-size: 1.1vw;
 }
 
 
@@ -231,23 +231,22 @@ footer p {
 
 /*Responsive & adaptive styles*/
 @media only screen and (max-width: 1400px) {
+    /*Common styles*/
     h4 {
         font-size: 1.35vw;
     }
 
+    /*Navbar styles*/
     .navLink-a {
         font-size: 20px;
     }
 
+    /*Reviews section styles*/
     .reviewLogo img {
         width: 2.75vw;
     }
     .reviewStars object {
         width: 27.5%;
-    }
-    .reviewBody p{
-        margin-top: 0.5vw;
-        font-size: 1.1vw;
     }
 }
 @media only screen and (max-width: 990px) {
@@ -300,7 +299,6 @@ footer p {
     /*Hero styles*/
     #hero .container {
         height: 300px;
-        /*height: 30vw;*/
     }
 
     /*About Us section styles*/
@@ -350,5 +348,101 @@ footer p {
     }
 }
 @media only screen and (max-width: 576px) {
+    /*Common styles*/
+    h1 {
+        font-size: 27px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    section {
+        padding: 30px 0;
+        scroll-margin-top: 50px;
+    }
 
+    /*Common class styles*/
+    .row-2 {
+        width: 100%;
+    }
+    .row-3 {
+        width: 100%;
+    }
+    .title {
+        padding-bottom: 24px;
+    }
+
+    /*Header styles*/
+    #home {
+        height: 100px;
+    }
+
+    /*Navbar styles*/
+    .navRow {
+        height: 50px;
+    }
+    .navLink {
+        margin: 0;
+    }
+    .navLink-a{
+        padding: 8px 4px;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    /*Hero styles*/
+    #hero .container {
+        height: 180px;
+    }
+
+    /*About Us section styles*/
+    #aboutUs .block {
+        margin: 0 12px 12px;
+        max-width: 800px;
+    }
+    #aboutUs p{
+        margin-bottom: 12px;
+        font-size: 18px;
+    }
+
+    /*Where To Go section styles*/
+    .card {
+        margin: 12px;
+        padding: 12px;
+    }
+    .cardTitle {
+        margin-top: 12px;
+    }
+
+    /*Reviews section styles*/
+    .review {
+        margin: 12px;
+        padding: 24px;
+    }
+    .reviewHead {
+        margin-bottom: 0;
+    }
+    .reviewLogo img {
+        width: 42px;
+    }
+    .reviewStars object {
+        width: 96px;
+    }
+    .reviewBody p{
+        margin-top: 4px;
+        font-size: 16px;
+    }
+
+    /*Footer styles*/
+    footer div {
+        height: 54px;
+    }
+    footer p {
+        font-size: 9px;
+    }
 }

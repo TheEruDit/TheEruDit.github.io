@@ -52,8 +52,14 @@ window.addEventListener("scroll", function() {
             // // console debug function
             // console.log("navbar resizing successful");
         }
-        else {
+        else if (window.innerWidth >= 576) {
             home.style.height = "80px";
+            for (const navImageRow of navImageRows) {
+                navImageRow.style.height = "0";
+            }
+        }
+        else {
+            home.style.height = "50px";
             for (const navImageRow of navImageRows) {
                 navImageRow.style.height = "0";
             }
@@ -73,10 +79,16 @@ window.addEventListener("scroll", function() {
             // // console debug function
             // console.log("navbar resizing successful");
         }
-        else {
+        else if (window.innerWidth >= 576){
             home.style.height = "160px";
             for (const navImageRow of navImageRows) {
                 navImageRow.style.height = "80px";
+            }
+        }
+        else {
+            home.style.height = "100px";
+            for (const navImageRow of navImageRows) {
+                navImageRow.style.height = "50px";
             }
         }
         // // console debug function
