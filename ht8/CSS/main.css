@@ -1,0 +1,429 @@
+/*
+  ========================================
+  General Style
+  ========================================
+*/
+/* ----- Box Sizing ----- */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Clearfix */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* ----- Float Positioning ----- */
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/* ----- inline-block Positioning ----- */
+.column-3 {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+	padding: 80px 20px 80px 50px;
+}
+
+/* ----- Main Content ----- */	
+main {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.video-center {
+	max-width: 600px;
+	margin: 20px auto;
+}
+
+/* ----- Media ----- */
+img, video {
+	width: 100%;/*max-width: 100%*/
+	height: auto;
+	padding: 5px;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+figcaption {
+	font-size: 1.2em;
+	font-weight: 600;
+	font-family: Arial;
+	text-align: center;
+	padding: 30px 15px;
+	
+}
+.img-center {
+	text-align: center;
+}
+
+/*
+  ========================================
+  Alignment and Grid
+  ========================================
+*/
+/* ----- Alignment ----- */
+#main-content {
+	width: 85%;
+	margin: 0 auto;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+@font-face {
+	font-family: Lobster;
+	src: local("Lobster"), url("../fonts/lobster.woff") format("woff");
+}
+h1, h2, h3, h4 {
+	font-weight: 600;
+	font-family: Arial;
+}
+h1, h4 {
+	text-align: center;
+}
+h1 {
+	font-size: 2.6em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.4em;
+}
+
+h4 {
+	font-size: 1.2em;
+}
+
+p {
+	font-size: 1.1em;
+	font-family: Arial;
+	text-align: justify;
+	line-height: 1.4em;
+}
+h3 {
+	width: 50%;
+    padding: 10px 15px;
+    border-radius: 5px 15px 5px 15px;
+}
+.bgDark h4 {
+	text-shadow: 5px 5px 10px #fecc00;
+}
+h3.contactus {
+	font-size: 5em;
+	font-family: 'Teko', sans-serif;
+	letter-spacing: .1em;
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	margin: 0 0 40px 0;
+}
+
+/*
+  ========================================
+  Sections Background
+  ========================================
+*/
+main {
+	background-image: url("../images/main-bg.jpg");
+ 	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+.about {
+	background: #00a0e3 linear-gradient(rgb(0, 160, 227, .9), rgb(255, 255, 255, .9));
+}
+.bgLight {
+	background-color: #f7f8f8;
+}
+.bgDark {
+	background: #00a0e3 radial-gradient(rgb(0, 160, 227, .9), rgb(255, 255, 255, .9));
+}
+.bgFooter {
+	background: #015cc2 linear-gradient(to right bottom, #015cc2, #fff);
+	padding: 60px 0;
+}
+
+/*
+  ========================================
+  Headers Background 
+  ========================================
+*/
+h3.whereToGo {
+	background-color: #00a0e3;
+	color: #fff;
+}
+h3.whereToEat {
+	background-color: #fecc00;
+	color: #fff;
+}
+
+h3.whereToStay {
+	background: #e31e24;
+	color: #fff;
+}
+
+/*
+  ========================================
+  Back To Home Button
+  ========================================
+*/
+#toTop {
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	border: 1px solid #fff;
+	text-align: center;
+	background-color: #00a0e3;
+	border-radius: 12px;
+}
+#toTop span {
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+	font-family: Arial;
+	line-height: 60px;
+	font-weight: 600;
+}
+#toTop:hover {
+	background-color: #07b;
+	transition: ease-in-out 0.2s;
+}
+#toTop:active {
+	background-color: #06a;
+	transition: ease-in-out 0.05s;
+}
+
+/*
+  ========================================
+  Hero Image
+  ========================================
+*/
+.hero {
+	padding: 150px 0;
+	background-image: url("../images/lutsk.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+.hero h1 {
+	font-size: 3.5em;
+	text-align: center;
+	font-family: Lobster;
+	letter-spacing: .1em;
+}
+.hero span {
+	background-color: rgba(0,0,0, 0.3);
+	color: #fff;
+	padding: 50px 100px;
+	display: inline-block;
+}
+
+/*
+  ========================================
+  Primary Navigation
+  ========================================
+*/
+.top-header {
+	margin-bottom: 10px;
+}
+.top-header-logo{
+	vertical-align: bottom;
+	text-align: center;
+}
+.top-header-primary-nav {
+	height: 100px;
+	text-align: center;
+	line-height: 80px;
+}
+.top-header-primary-nav-mobile {
+	text-align: center;
+	height: auto;
+    line-height: inherit;
+}
+ul li {
+	font-size: 1.2em;
+	font-family: Arial;
+	text-align: center;
+	display: inline-block;
+}
+a {
+	text-decoration: none;
+}
+
+/*
+  ========================================
+  About Section
+  ========================================
+*/
+.about {	
+	padding: 60px 40px 60px 40px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+.about blockquote {
+	border-left: 2px solid red;
+	padding-left: 20px;
+}
+/* ----- Grid inline-block ----- */
+.column-3 {
+	width: 30%;
+	height: auto;
+	border: 1px solid #dfe2e5;
+	padding: 1px 5px;
+	margin: 0 10px;
+}
+
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+/* ↓↓↓↓↓ HT 8 work below ↓↓↓↓↓ */
+
+/*
+  ========================================
+  Responsive and Adaptive
+  ========================================
+*/
+@media (max-device-width: 576px){
+	/* ----- Task 1 ----- */
+	/* Implemented by default */
+
+	/* ----- Task 2 ----- */
+	main {
+		background-size: cover;
+		background-position: center;
+	}
+	.hero {
+		background-size: cover;
+		padding: 50px 0;
+	}
+
+	/* ----- Task 3 ----- */
+	.hero h1 {
+		letter-spacing: 1px;
+		font-weight: 900;
+	}
+	.hero h1 span {
+		padding: 24px 24px;
+		font-size: 42px;
+	}
+	h2 {
+		font-size: 24px;
+	}
+	h3.contactus {
+		font-size: 32px;
+		letter-spacing: .05em;
+		font-weight: 900;
+	}
+
+	/* ----- Task 4 ----- */
+	.col-2, .col-4, .col-9, .col-12 {
+		float: none;
+	}
+	.col-4 {
+		width: 100%;
+	}
+	.column-3 {
+		display: table;
+		width: 100%;
+		margin: 0 0 20px 0;
+	}
+	/* ----- Task 5 ----- */
+	.top-header-primary-nav-mobile {
+		visibility: initial;
+	}
+	.top-header-primary-nav {
+		visibility: hidden;
+		position: absolute;
+	}
+
+	/* ----- Other styling to match the "HT8-Sample-Mobile.png" image ----- */
+	/* ----- Logo styling ----- */
+	.top-header-logo {
+		display: inline-block;
+		width: 100%;
+	}
+	.top-header-logo img {
+		align-content: center;
+		width: 150px;
+	}
+
+	/* ----- Other styling ----- */
+	.about {
+		padding: 36px 16px;
+	}
+	section {
+		padding: 36px 8px;
+	}
+	#main-content {
+		width: 100%;
+	}
+}
+
+/* ----- Task 6 ----- */
+@media (min-device-width: 768px){
+	.top-header-primary-nav {
+		visibility: initial;
+	}
+	.top-header-primary-nav-mobile {
+		visibility: hidden;
+		position: absolute;
+	}
+}
+
+/*
+  ========================================
+  Mobile navigation styling to match the "HT8-Sample-Mobile.png" image
+  ========================================
+*/
+.top-header-primary-nav-mobile a {
+	display: block;
+	padding: 15px;
+	background-color: #00a0e3;
+}
+.top-header-primary-nav-mobile ul {
+	padding: 0;
+}
+.top-header-primary-nav-mobile li {
+	color: #fff;
+}
+
+
