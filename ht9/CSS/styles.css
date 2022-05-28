@@ -1,0 +1,417 @@
+/*
+  ========================================
+  General Style
+  ========================================
+*/
+/* ----- Box Sizing ----- */
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+  	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+section {
+	padding: 4vw 1vw;
+}
+
+/* ----- Smooth Scroll ----- */
+html {
+	scroll-behavior: smooth;
+}
+
+/* ----- Media ----- */
+img, video {
+	width: 100%;
+	height: auto;
+}
+
+
+/*
+  ========================================
+  Responsive Blocks
+  ========================================
+*/
+.row {
+	margin-top: 2vw;
+	width: 100%;
+	display: grid;
+}
+.row-2 {
+	grid-template-columns: 1fr 1fr;
+}
+.row-3 {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.row-3-9 {
+	margin-top: 0;
+	grid-template-columns: 25% 75%;
+}
+.col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.col-3 {
+	margin: 1vw;
+}
+
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+h1, h2, h3, h4 {
+	font-weight: 600;
+	font-family: Arial;
+	text-align: center;
+}
+h1 {
+	font-size: 4vw;
+	letter-spacing: 0.1vw;
+}
+h2 {
+	font-size: 2vw;
+}
+h3 {
+	font-size: 1.5vw;
+}
+h4 {
+	font-size: 1.3vw;
+}
+p {
+	margin: 0.5vw;
+	font-size: 1.2vw;
+	font-family: Arial;
+	text-align: justify;
+	line-height: 1.75vw;
+}
+
+
+/*
+  ========================================
+  Backgrounds
+  ========================================
+*/
+footer {
+	background-color: #00a0e3;
+}
+.bgDark {
+	background: radial-gradient(rgb(0,160,227, .9), rgb(255,255,255, 0.9));
+}	
+.bgLight {
+	background-color: #f7f8f8;
+}
+
+
+/*
+  ========================================
+  To Top Home Button
+  ========================================
+*/
+#toTop {
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	border: 2px solid #fff;
+	text-align: center;
+	background-color: #00a0e3;
+	border-radius: 16px;
+	transition: all ease-in-out 0.1s;
+}
+#toTop span {
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	font-family: Arial;
+	line-height: 60px;
+	font-weight: 600;
+}
+#toTop:hover {
+	background-color: #0070b0;
+}
+#toTop:active {
+	background-color: blue;
+}
+
+
+/*
+  ========================================
+  Hero Image
+  ========================================
+*/
+.hero {
+	padding: 150px 0;
+	background-image: url("../images/lutsk.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+.hero h1 {
+	text-align: center;
+	font-family: initial;
+}
+.hero span {
+	background-color: rgba(0,0,0, 0.3);
+	color: #fff;
+	padding: 50px 100px;
+	display: inline-block;
+}
+
+
+/*
+  ========================================
+  Primary Navigation
+  ========================================
+*/
+.top-header-logo{
+	vertical-align: bottom;
+	text-align: center;
+}
+.top-header-logo img {
+	padding: 16px;
+	width: auto;
+	height: 150px;
+}
+.top-header-primary-nav {
+	height: 150px;
+	text-align: center;
+}
+.top-header-primary-nav-mobile {
+	display: none;
+	text-align: center;
+	height: auto;
+	line-height: inherit;
+}
+ul li {
+	font-family: Arial;
+	text-align: center;
+}
+.top-header-primary-nav ul li {
+	display: inline-block;
+	margin: 0 12px;
+	font-size: 1.5em;
+}
+a {
+	text-decoration: none;
+}
+.top-header-primary-nav a {
+	color: black;
+}
+.top-header-primary-nav a:active {
+	color: black;
+}
+.top-header-primary-nav a:visited {
+	color: black;
+}
+.top-header-primary-nav-mobile ul {
+	margin: 16px 0;
+	padding: 0;
+	width: 100%;
+}
+.top-header-primary-nav-mobile ul li {
+	display: block;
+	margin: 0;
+	padding: 16px 0;
+	font-size: 22px;
+	color: #fff;
+	background-color: #00a0e3;
+	border: 1px solid #ccc;
+}
+
+
+/*
+  ========================================
+  Sections Styling
+  ========================================
+*/
+/* ----- About Section ----- */
+#about h2 {
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+/* ----- Places Section ----- */
+#places h4 {
+	margin-top: 1vw;
+}
+/* ----- Food Section ----- */
+#food h4 {
+	margin-top: 1vw;
+}
+
+
+/* ----- Footer Styling ----- */
+footer div {
+	height: 3vw;
+}
+
+
+/*
+  ========================================
+  Adaptive Styling
+  ========================================
+*/
+@media only screen and (max-width: 990px) {
+	/* ----- Section ----- */
+	section {
+		padding: 32px 24px;
+	}
+	/* ----- Responsive Blocks ----- */
+	.row {
+		margin-top: 2vw;
+		width: 100%;
+		display: grid;
+	}
+	.row-2 {
+		grid-template-columns: 1fr;
+	}
+	.col-3 {
+		margin: 8px;
+	}
+	/* ----- Typography ----- */
+	h1 {
+		font-size: 36px;
+		letter-spacing: 1px;
+	}
+	h2 {
+		font-size: 28px;
+	}
+	h3 {
+		font-size: 24px;
+	}
+	h4 {
+		font-size: 14px;
+	}
+	p {
+		margin-top: 16px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	/* ----- To Top Button ----- */
+	#toTop {
+		width: 48px;
+		height: 48px;
+		right: 16px;
+		bottom: 16px;
+		border-radius: 12px;
+	}
+	#toTop span {
+		font-size: 16px;
+		line-height: 48px;
+	}
+	/* ----- Hero ----- */
+	.hero span {
+		padding: 25px 50px;
+	}
+	/* ----- Navigation ----- */
+	.top-header-logo img {
+		padding: 8px;
+		max-width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+	.top-header-primary-nav {
+		height: 100px;
+	}
+	.top-header-primary-nav ul li {
+		margin: 0;
+		padding: 4px 0;
+		font-size: 18px;
+	}
+	/* ----- About Section ----- */
+	#about h2 {
+		color: white;
+		width: 100%;
+		text-align: center;
+	}
+	/* ----- Places Section ----- */
+	#places h4 {
+		margin-top: 12px;
+	}
+	/* ----- Food Section ----- */
+	#food h4 {
+		margin-top: 12px;
+	}
+	/* ----- Footer ----- */
+	footer div {
+		height: 40px;
+	}
+}
+@media only screen and (max-width: 576px) {
+	/* ----- Section ----- */
+	section {
+		padding: 42px 12px;
+	}
+	/* ----- Responsive Blocks ----- */
+	.row {
+		margin-top: 24px;
+	}
+	.row-3 {
+		grid-template-columns: 1fr;
+	}
+	.row-3-9 {
+		grid-template-columns: 1fr;
+	}
+	.col-3 {
+		margin: 16px 0;
+	}
+	/* ----- Typography ----- */
+	h1 {
+		font-size: 42px;
+	}
+	h2 {
+		font-size: 32px;
+	}
+	h3 {
+		font-size: 26px;
+	}
+	h4 {
+		font-size: 20px;
+	}
+	p {
+		margin-top: 12px;
+		font-size: 18px;
+	}
+	/* ----- To Top Button ----- */
+	#toTop {
+		width: 54px;
+		height: 54px;
+		right: 16px;
+		bottom: 16px;
+		border-radius: 16px;
+	}
+	#toTop span {
+		font-size: 18px;
+		line-height: 54px;
+	}
+	/* ----- Hero ----- */
+	.hero {
+		padding: 100px 0;
+	}
+	.hero span {
+		padding: 24px 24px;
+	}
+	/* ----- Navigation ----- */
+	.top-header-primary-nav {
+		display: none;
+	}
+	.top-header-primary-nav-mobile {
+		display: flex;
+	}
+	/* ----- Places Section ----- */
+	#places h4 {
+		margin-top: 16px;
+	}
+	/* ----- Food Section ----- */
+	#food h4 {
+		margin-top: 16px;
+	}
+}
+
