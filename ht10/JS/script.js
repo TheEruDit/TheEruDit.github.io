@@ -53,7 +53,7 @@ window.addEventListener("scroll", function() {
             // console.log("navbar resizing successful");
         }
         else {
-            home.style.height = "90px";
+            home.style.height = "80px";
             for (const navImageRow of navImageRows) {
                 navImageRow.style.height = "0";
             }
@@ -76,7 +76,7 @@ window.addEventListener("scroll", function() {
         else {
             home.style.height = "160px";
             for (const navImageRow of navImageRows) {
-                navImageRow.style.height = "90px";
+                navImageRow.style.height = "80px";
             }
         }
         // // console debug function
