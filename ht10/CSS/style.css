@@ -253,20 +253,20 @@ footer p {
 @media only screen and (max-width: 990px) {
     /*Common styles*/
     h1 {
-        font-size: 42px;
+        font-size: 72px;
     }
     h2 {
-        font-size: 32px;
+        font-size: 48px;
     }
     h3 {
-        font-size: 24px;
+        font-size: 42px;
     }
     h4 {
-        font-size: 22px;
+        font-size: 36px;
     }
     section {
-        padding: 48px 0;
-        scroll-margin-top: 120px;
+        padding: 72px 0;
+        scroll-margin-top: 150px;
     }
 
     /*Common class styles*/
@@ -277,24 +277,24 @@ footer p {
         width: 100%;
     }
     .title {
-        padding-bottom: 32px;
+        padding-bottom: 48px;
     }
 
     /*Header styles*/
     #home {
-        height: 150px;
+        height: 200px;
     }
 
     /*Navbar styles*/
     .navRow {
-        height: 75px;
+        height: 100px;
     }
     .navLink {
-        margin: 0 4px;
+        margin: 0 8px;
     }
     .navLink-a{
         padding: 12px;
-        border-radius: 10px;
+        font-size: 36px;
     }
 
     /*Hero styles*/
@@ -309,17 +309,17 @@ footer p {
         max-width: 800px;
     }
     #aboutUs p{
-        margin-bottom: 12px;
-        font-size: 20px;
+        margin-bottom: 16px;
+        font-size: 28px;
     }
 
     /*Where To Go section styles*/
     .card {
-        margin: 24px;
-        padding: 16px;
+        margin: 36px;
+        padding: 36px;
     }
     .cardTitle {
-        margin-top: 16px;
+        margin-top: 36px;
     }
 
     /*Reviews section styles*/
@@ -328,25 +328,25 @@ footer p {
         padding: 36px;
     }
     .reviewHead {
-        margin-bottom: 6px;
+        margin-bottom: 16px;
     }
     .reviewLogo img {
-        width: 48px;
+        width: 64px;
     }
     .reviewStars object {
-        width: 124px;
+        width: 200px;
     }
     .reviewBody p{
-        margin-top: 8px;
-        font-size: 18px;
+        margin-top: 16px;
+        font-size: 32px;
     }
 
     /*Footer styles*/
     footer div {
-        height: 72px;
+        height: 100px;
     }
     footer p {
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 @media only screen and (max-width: 576px) {
