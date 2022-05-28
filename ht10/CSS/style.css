@@ -192,7 +192,7 @@ h4 {
     background-color: var(--main-color);
     margin: 1.25vw;
     padding: 1.75vw;
-    border-radius: 16px;
+    border-radius: 24px;
 }
 .reviewHead {
     display: flex;
@@ -256,17 +256,17 @@ footer p {
         font-size: 42px;
     }
     h2 {
-        font-size: 32px;
+        font-size: 34px;
     }
     h3 {
-        font-size: 24px;
+        font-size: 28px;
     }
     h4 {
-        font-size: 22px;
+        font-size: 24px;
     }
     section {
-        padding: 48px 0;
-        scroll-margin-top: 120px;
+        padding: 50px 0;
+        scroll-margin-top: 80px;
     }
 
     /*Common class styles*/
@@ -277,17 +277,17 @@ footer p {
         width: 100%;
     }
     .title {
-        padding-bottom: 32px;
+        padding-bottom: 34px;
     }
 
     /*Header styles*/
     #home {
-        height: 150px;
+        height: 160px;
     }
 
     /*Navbar styles*/
     .navRow {
-        height: 75px;
+        height: 80px;
     }
     .navLink {
         margin: 0 4px;
@@ -305,40 +305,40 @@ footer p {
 
     /*About Us section styles*/
     #aboutUs .block {
-        margin: 0 24px 12px;
+        margin: 0 36px 12px;
         max-width: 800px;
     }
     #aboutUs p{
         margin-bottom: 12px;
-        font-size: 20px;
+        font-size: 24px;
     }
 
     /*Where To Go section styles*/
     .card {
-        margin: 24px;
-        padding: 16px;
+        margin: 36px;
+        padding: 24px;
     }
     .cardTitle {
-        margin-top: 16px;
+        margin-top: 24px;
     }
 
     /*Reviews section styles*/
     .review {
-        margin: 24px;
+        margin: 36px;
         padding: 36px;
     }
     .reviewHead {
-        margin-bottom: 6px;
+        margin-bottom: 0;
     }
     .reviewLogo img {
-        width: 48px;
+        width: 54px;
     }
     .reviewStars object {
-        width: 124px;
+        width: 136px;
     }
     .reviewBody p{
         margin-top: 8px;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     /*Footer styles*/

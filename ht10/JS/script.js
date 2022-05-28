@@ -1,4 +1,6 @@
 window.addEventListener('load', function () {
+    if (window.innerWidth < 992)
+        return;
     let maxHeight = 0;
     let reviews = document.getElementsByClassName("review");
     for (const review of reviews) {
@@ -8,6 +10,8 @@ window.addEventListener('load', function () {
     reviewsResize(reviews, maxHeight);
 });
 window.addEventListener('resize', function() {
+    if (window.innerWidth < 992)
+        return;
     let maxHeight = 0;
     let reviews = document.getElementsByClassName("review");
     for (const review of reviews) {
@@ -49,7 +53,7 @@ window.addEventListener("scroll", function() {
             // console.log("navbar resizing successful");
         }
         else {
-            home.style.height = "100px";
+            home.style.height = "90px";
             for (const navImageRow of navImageRows) {
                 navImageRow.style.height = "0";
             }
@@ -70,9 +74,9 @@ window.addEventListener("scroll", function() {
             // console.log("navbar resizing successful");
         }
         else {
-            home.style.height = "200px";
+            home.style.height = "160px";
             for (const navImageRow of navImageRows) {
-                navImageRow.style.height = "100px";
+                navImageRow.style.height = "90px";
             }
         }
         // // console debug function
